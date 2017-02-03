@@ -20,16 +20,12 @@ git config --global user.email 'root@localhost'
 git config --global color.ui false
 
 ## create directory and change to it
-mkdir /mnt/android && cd /mnt/android
-repo init -u https://github.com/LineageOS/android.git -b cm-14.1
+mkdir /mnt/android
+(cd /mnt/android; repo init -u https://github.com/LineageOS/android.git -b cm-14.1)
 
 ## create directory for local manifest and copy it
 mkdir /mnt/android/.repo/local_manifests
 cp ZUKZ1.xml /mnt/android/.repo/local_manifests/ZUKZ1.xml
 
 ## sync repo and build
-repo sync
-source build/envsetup.sh
-breakfast ham
-croot
-brunch ham
+(cd /mnt/android; repo sync; source build/envsetup.sh; breakfast ham; croot; brunch ham)
