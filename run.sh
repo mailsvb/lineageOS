@@ -14,9 +14,10 @@ apt-get install -y android-tools-adb android-tools-fastboot
 ## install repo
 curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > /bin/repo && chmod +x /bin/repo
 
-## add git username
+## add git config
 git config --global user.name 'root'
 git config --global user.email 'root@localhost'
+git config --global color.ui false
 
 ## create directory and change to it
 mkdir /mnt/android && cd /mnt/android
