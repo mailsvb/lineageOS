@@ -14,6 +14,10 @@ apt-get install -y android-tools-adb android-tools-fastboot
 ## install repo
 curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > /bin/repo && chmod +x /bin/repo
 
+## add git username
+git config --global user.name 'root'
+git config --global user.email 'root@localhost'
+
 ## create directory and change to it
 mkdir /mnt/android && cd /mnt/android
 repo init -u https://github.com/LineageOS/android.git -b cm-14.1
