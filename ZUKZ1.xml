@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="Ordenkrieger/android_device_zuk_ham" path="device/zuk/ham" remote="github" revision="cm-14.1" />
+  <project name="Ordenkrieger/proprietary_vendor_zuk" path="vendor/zuk" remote="github" revision="cm-14.1" />
+  <project name="Ordenkrieger/android_kernel_cyanogen_msm8974" path="kernel/cyanogen/msm8974" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-14.1" />
+</manifest>
